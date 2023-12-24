@@ -1,6 +1,6 @@
 {
 	"name": "tstl-remove-debug",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "TypeScriptToLua plugin that removes debugging expressions",
 	"repository": {
 		"type": "git",
@@ -22,6 +22,6 @@
 		"typescript-to-lua": "~1.22.0"
 	},
 	"peerDependencies": {
-		"typescript-to-lua": ">=1.0.0"
+		"typescript-to-lua": ">=1.22.0"
 	}
 }

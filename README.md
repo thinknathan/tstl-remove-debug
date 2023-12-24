@@ -22,7 +22,7 @@ Becomes:
 
 ## Installation
 
-Requires a modern version of TSTL. Tested on TSTL >= 1.22.0.
+Requires TSTL >= 1.22.0.
 
 1. Install this plugin
 
