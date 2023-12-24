@@ -18,6 +18,8 @@ Becomes:
 
 ```
 
+(This space intentionally left blank)
+
 ## Installation
 
 Requires a modern version of TSTL. Tested on TSTL >= 1.22.0.
