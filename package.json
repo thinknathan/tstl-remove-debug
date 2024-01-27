@@ -11,6 +11,7 @@
 	"main": "dist/tstl-remove-debug.cjs",
 	"type": "commonjs",
 	"scripts": {
+		"ci": "tsc --noEmit",
 		"build": "tsc && npm run renameCjs && npm run prettier",
 		"renameCjs": "node -e \"require('fs').renameSync('dist/tstl-remove-debug.js', 'dist/tstl-remove-debug.cjs')\"",
 		"prettier": "prettier --write ./"
