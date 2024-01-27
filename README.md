@@ -1,5 +1,7 @@
 # tstl-remove-debug
 
+[![CI](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml)
+
 TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`.
 
 ## Example
