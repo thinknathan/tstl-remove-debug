@@ -31,9 +31,9 @@ Requires TSTL >= 1.22.0.
 1. Install this plugin
 
 ```bash
-yarn add git+https://git@github.com/thinknathan/tstl-remove-debug.git#^1.0.0 -D
+yarn add tstl-remove-debug -D
 # or
-npm install git+https://git@github.com/thinknathan/tstl-remove-debug.git#^1.0.0 --save-dev
+npm install tstl-remove-debug --save-dev
 ```
 
 2. Add `tstl-remove-debug` to `tstl.luaPlugins` in `tsconfig.json`
