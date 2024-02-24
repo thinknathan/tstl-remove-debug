@@ -2,7 +2,9 @@
 
 [![CI](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml)
 
-TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`.
+TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`. The purpose is to reduce code size for production builds.
+
+:exclamation: Use this and any code transformation plugin with caution. Mistakes are possible.
 
 ## Example
 
