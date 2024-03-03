@@ -1,6 +1,6 @@
 # tstl-remove-debug
 
-[![CI](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml)
+[![CI](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml) ![GitHub License](https://img.shields.io/github/license/thinknathan/tstl-remove-debug)
 
 TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`. The purpose is to reduce code size for production builds.
 
