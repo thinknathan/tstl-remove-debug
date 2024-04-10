@@ -2,7 +2,9 @@
 
 [![CI](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml/badge.svg)](https://github.com/thinknathan/tstl-remove-debug/actions/workflows/ci.yml) ![GitHub License](https://img.shields.io/github/license/thinknathan/tstl-remove-debug)
 
-TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`. The purpose is to reduce code size for production builds.
+TypeScriptToLua plugin that strips calls to `print`, `pprint`, `assert`, and any functions attached to `profiler` and `debug`. Also replaces the statement `sys.get_engine_info().is_debug` with `false`.
+
+The purpose is to reduce code size for production builds.
 
 :exclamation: Use this and any code transformation plugin with caution. Mistakes are possible.
 
@@ -14,15 +16,15 @@ pprint(foo);
 assert(foo === '');
 profiler.start();
 debug.draw_text('');
+const is_debug = sys.get_engine_info().is_debug;
 ```
 
 Becomes:
 
 ```lua
-
+-- (This space intentionally left blank)
+local is_debug = false
 ```
-
-(This space intentionally left blank)
 
 ## Installation
 
