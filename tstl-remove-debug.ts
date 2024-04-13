@@ -9,19 +9,17 @@ let matchToRemove: RegExpExecArray | null;
 function removeDebug(file: tstl.EmitFile) {
 	while ((matchToRemove = patternToRemove.exec(file.code)) !== null) {
 		const statement = matchToRemove[0];
-		// @ts-expect-error Missing console definition
 		console.log(`Removing ${statement}`);
 		// Replace statement with an empty line
 		file.code = file.code.replace(statement, '');
 	}
 }
-
+6;
 const patternToReplace = /sys\.get_engine_info\(\)\.is_debug/g;
 let matchToReplace: RegExpExecArray | null;
 function replaceDebug(file: tstl.EmitFile) {
 	while ((matchToReplace = patternToReplace.exec(file.code)) !== null) {
 		const statement = matchToReplace[0];
-		// @ts-expect-error Missing console definition
 		console.log(`Removing ${statement}`);
 		// Replace statement with false
 		file.code = file.code.replace(statement, 'false');
