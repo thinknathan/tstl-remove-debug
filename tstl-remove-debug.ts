@@ -14,7 +14,7 @@ function removeDebug(file: tstl.EmitFile) {
 		file.code = file.code.replace(statement, '');
 	}
 }
-6;
+
 const patternToReplace = /sys\.get_engine_info\(\)\.is_debug/g;
 let matchToReplace: RegExpExecArray | null;
 function replaceDebug(file: tstl.EmitFile) {
