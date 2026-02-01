@@ -8,7 +8,6 @@ let matchToRemove;
 function removeDebug(file) {
 	while ((matchToRemove = patternToRemove.exec(file.code)) !== null) {
 		const statement = matchToRemove[0];
-		// @ts-expect-error Missing console definition
 		console.log(`Removing ${statement}`);
 		// Replace statement with an empty line
 		file.code = file.code.replace(statement, '');
@@ -19,7 +18,6 @@ let matchToReplace;
 function replaceDebug(file) {
 	while ((matchToReplace = patternToReplace.exec(file.code)) !== null) {
 		const statement = matchToReplace[0];
-		// @ts-expect-error Missing console definition
 		console.log(`Removing ${statement}`);
 		// Replace statement with false
 		file.code = file.code.replace(statement, 'false');

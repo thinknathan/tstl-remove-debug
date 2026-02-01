@@ -1,4 +1,4 @@
-import * as ts from 'typescript';
+import type { Program } from 'typescript';
 import * as tstl from 'typescript-to-lua';
 
 // Capture statements from the keyword, to the ending parenthesis
@@ -31,7 +31,7 @@ function replaceDebug(file: tstl.EmitFile) {
  */
 const plugin: tstl.Plugin = {
 	afterEmit: (
-		_program: ts.Program,
+		_program: Program,
 		_options: tstl.CompilerOptions,
 		emitHost: tstl.EmitHost,
 		result: tstl.EmitFile[],
